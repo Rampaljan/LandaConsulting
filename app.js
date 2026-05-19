@@ -1,4 +1,4 @@
-let currentLanguage = localStorage.getItem('language') || 'pl';
+let currentLanguage = localStorage.getItem('language') || 'en';
 
 function setLanguage(lang) {
     currentLanguage = lang;
