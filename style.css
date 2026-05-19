@@ -90,6 +90,8 @@ body {
     list-style: none;
     gap: 30px;
     align-items: center; /* Perfectly centers all nav links vertically in the header */
+    margin: 0 !important; /* Explicitly overrides Bootstrap's default bottom margin */
+    padding: 0 !important; /* Explicitly overrides Bootstrap's default left padding */
 }
 
 .nav-links li {
