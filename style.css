@@ -77,6 +77,7 @@ body {
     width: auto;
     object-fit: contain;
     border-radius: 10px; /* Sophisticated rounded corners for premium aesthetic */
+    display: block; /* Eliminates vertical baseline offset for absolute centering */
     transition: transform 0.3s ease;
 }
 
@@ -91,13 +92,19 @@ body {
     align-items: center; /* Perfectly centers all nav links vertically in the header */
 }
 
+.nav-links li {
+    display: inline-flex;
+    align-items: center; /* Explicit vertical centering of the list items */
+}
+
 .nav-links a {
     text-decoration: none;
     color: #e2e8f0; /* Elegant light-silver link text for superb dark navy navbar contrast */
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
-    padding-bottom: 4px;
+    padding: 6px 0; /* Perfectly balanced top/bottom padding to achieve absolute pixel-perfect centering */
+    line-height: 1; /* Normalizes line-height to remove default vertical spacing anomalies */
 }
 
 .nav-links a::after {
