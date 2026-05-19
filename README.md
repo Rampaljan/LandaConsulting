@@ -22,7 +22,7 @@ O mnie Kluczowy element – podkreślenie doświadczenia. Wyślę moje bio
 Usługi (Services): Szczegółowy opis, podzielony na kategorie (np. Doradztwo strategiczne, Compliance/EU ETS, Audyty techniczne, Zarządzanie ryzykiem). Praca dla funduszy inwestycyjnych, produkty HR i projekty HR owe. Interim management. 
 Case Studies/Projekty: Przykłady udanych wdrożeń tutaj moje osiągnięcia zawodowe wypisze.
 Aktualności/Blog: tutaj link do ETA.fm i podcastów
-Kontakt: Formularz, bezpośredni telefon komórkowy
+Kontakt: Formularz (na razie sam wygląd, funkcjonalność później), bezpośredni telefon komórkowy
 
 
 3. Wygląd i funkcjonalności (UX/UI)
@@ -44,9 +44,4 @@ Home -> Usługi (Doradztwo techniczne | Strategia logistyczna | Audyty portowe) 
 
 Mam zarejestrowane przez www.godaddy.com 2 domeny
 Dominiklanda.com
- Landaconsulting.eu
-
-Konieczna poczta - na razie mam dominik@landaconsulting.eu lub info@dominiklanda.com
-Potrzebuje spójnego logo i szaty graficznej, strony www, wizytówek, poczty www. Template preżentacji w PowerPoint. 
-Jest tego trochę ale na razie strona, logo, email.
-Potem reszta
+Landaconsulting.eu
