@@ -626,12 +626,6 @@ footer p {
     justify-content: center;
 }
 
-.lang-toggle:hover {
-    background-color: #112240;
-    transform: scale(1.08) rotate(15deg);
-    box-shadow: 0 8px 25px rgba(11, 25, 44, 0.4);
-}
-
 .lang-toggle:active {
     transform: scale(0.95);
 }
@@ -644,7 +638,7 @@ footer p {
     flex-direction: column;
     gap: 12px;
     opacity: 0;
-    transform: translateY(15px) scale(0.9);
+    transform: translate3d(0, 15px, 0.01px) scale(0.9);
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     will-change: transform, opacity;
@@ -654,7 +648,7 @@ footer p {
 
 .lang-options.active {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translate3d(0, 0, 0.01px) scale(1);
     pointer-events: auto;
 }
 
@@ -662,7 +656,7 @@ footer p {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 2px solid transparent;
+    border: 2px solid rgba(10, 37, 64, 0.15); /* A subtle border in primary navy with opacity, always visible */
     background: transparent;
     padding: 0;
     cursor: pointer;
@@ -674,12 +668,7 @@ footer p {
     overflow: hidden;
     will-change: transform;
     backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-}
-
-.lang-btn:hover {
-    transform: scale(1.15) translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translate3d(0, 0, 0.01px);
 }
 
 .lang-btn:active {
@@ -697,17 +686,30 @@ footer p {
     object-fit: cover;
     display: block;
     border-radius: 50%;
-    border: 1px solid var(--primary-navy); /* Subtle border in footer navy to prevent blending */
     backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0.01px);
 }
 
 .translate-icon {
     transition: transform 0.3s ease;
 }
 
-.lang-toggle:hover .translate-icon {
-    transform: scale(1.05);
+/* Hover guards to prevent sticky hover states on mobile/touch devices */
+@media (hover: hover) {
+    .lang-toggle:hover {
+        background-color: #112240;
+        transform: scale(1.08) rotate(15deg);
+        box-shadow: 0 8px 25px rgba(11, 25, 44, 0.4);
+    }
+
+    .lang-toggle:hover .translate-icon {
+        transform: scale(1.05);
+    }
+
+    .lang-btn:hover {
+        transform: scale(1.15) translate3d(0, -2px, 0.01px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
 }
 
 /* Responsive - Mobile */
