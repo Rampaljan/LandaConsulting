@@ -65,7 +65,7 @@ const translations = {
         },
         blog: {
             title: "Aktualności i Wiedza",
-            eta: "Link do ETA.fm i podcastów",
+            eta: "Posłuchaj moich podcastów na:",
             items: [
                 {
                     title: "Trendy w decarbonizacji transportu morskiego w 2026",
@@ -167,7 +167,7 @@ const translations = {
         },
         blog: {
             title: "News & Insights",
-            eta: "Link to ETA.fm and podcasts",
+            eta: "Listen to my podcasts on:",
             items: [
                 {
                     title: "Trends in Maritime Transport Decarbonization in 2026",

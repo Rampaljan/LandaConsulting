@@ -20,6 +20,15 @@ function getTranslation(key) {
 }
 
 function updatePage() {
+    // Highlight active language button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.getAttribute('data-lang') === currentLanguage) {
+            btn.classList.add('active-lang');
+        } else {
+            btn.classList.remove('active-lang');
+        }
+    });
+
     // Update elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');

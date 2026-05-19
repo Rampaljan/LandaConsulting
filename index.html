@@ -12,7 +12,10 @@
     
 <nav class="navbar">
         <div class="container">
-            <div class="logo">LandaConsulting</div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="LandaConsulting" class="logo-img">
+                <span>LandaConsulting</span>
+            </div>
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -71,7 +74,12 @@
         <div class="container">
             <h2 data-i18n="blog.title">Aktualności i Wiedza</h2>
             <div class="blog-content">
-                <p><span data-i18n="blog.eta">Link do ETA.fm i podcastów</span> - <a href="#">ETA.fm</a></p>
+                <div class="podcast-container">
+                    <span data-i18n="blog.eta" class="podcast-text">Posłuchaj moich podcastów na:</span>
+                    <a href="https://eta.fm/" target="_blank" rel="noopener noreferrer" class="podcast-logo-link" title="ETA.fm">
+                        <img src="assets/eta_fm_logo.png" alt="ETA.fm" class="podcast-logo-img">
+                    </a>
+                </div>
                 <div class="blog-grid" id="blogGrid">
                 </div>
             </div>
@@ -118,19 +126,41 @@
     <!-- Language Switcher -->
     <div class="language-switcher" id="languageSwitcher">
         <button class="lang-toggle" id="langToggle" title="Zmień język / Change language">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            <svg class="translate-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8H4.69c.73 1.63 1.77 3.17 3.1 4.56L3.2 17.1l1.42 1.42L9 14.13l2.85 2.85.03-.06c.33-.61.66-1.24.99-1.85zM19.5 10h-2L13 22h2l1.12-3h4.75l1.13 3h2l-4.5-12zm-2.63 7l1.63-4.37L20.13 17h-3.26z" fill="currentColor"/>
             </svg>
         </button>
         <div class="lang-options" id="langOptions">
             <button class="lang-btn" data-lang="pl" title="Polski">
-                <span class="flag">🇵🇱</span>
-                <span class="lang-text">PL</span>
+                <svg class="flag-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11" fill="#f0f0f0" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+                    <g clip-path="url(#clip-pl)">
+                        <rect x="0" y="0" width="24" height="12" fill="#ffffff"/>
+                        <rect x="0" y="12" width="24" height="12" fill="#eb5757"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip-pl">
+                            <circle cx="12" cy="12" r="11"/>
+                        </clipPath>
+                    </defs>
+                </svg>
             </button>
             <button class="lang-btn" data-lang="en" title="English">
-                <span class="flag">🇬🇧</span>
-                <span class="lang-text">EN</span>
+                <svg class="flag-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip-en)">
+                        <rect width="24" height="24" fill="#2f80ed"/>
+                        <path d="M0 0L24 24M24 0L0 24" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M0 0L24 24M24 0L0 24" stroke="#eb5757" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M12 0V24M0 12H24" stroke="#ffffff" stroke-width="5"/>
+                        <path d="M12 0V24M0 12H24" stroke="#eb5757" stroke-width="3"/>
+                    </g>
+                    <circle cx="12" cy="12" r="11" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+                    <defs>
+                        <clipPath id="clip-en">
+                            <circle cx="12" cy="12" r="11"/>
+                        </clipPath>
+                    </defs>
+                </svg>
             </button>
         </div>
     </div>
