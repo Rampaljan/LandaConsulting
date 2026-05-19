@@ -676,6 +676,8 @@ footer p {
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 50%;
+    border: 1px solid var(--primary-navy); /* Subtle border in footer navy to prevent blending */
 }
 
 .translate-icon {
