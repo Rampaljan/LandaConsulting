@@ -45,10 +45,10 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(240, 246, 252, 0.96); /* Elegant sea-spray translucent background */
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(15, 23, 42, 0.02);
+    box-shadow: 0 2px 15px rgba(10, 37, 64, 0.04);
     transition: all 0.3s ease;
 }
 
@@ -697,7 +697,7 @@ footer p {
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: var(--bg-white);
+        background-color: rgba(240, 246, 252, 0.98); /* Matching sea-spray backdrop for mobile dropdown */
         border-bottom: 1px solid var(--border-color);
         max-height: 0;
         overflow: hidden;
