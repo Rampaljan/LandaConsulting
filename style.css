@@ -415,12 +415,14 @@ p {
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .podcast-container:hover {
     box-shadow: var(--shadow-hover);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    border-color: var(--accent-green);
 }
 
 .podcast-text {
@@ -433,10 +435,10 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.podcast-logo-link:hover {
+.podcast-container:hover .podcast-logo-link {
     transform: scale(1.05);
 }
 
