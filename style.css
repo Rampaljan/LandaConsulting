@@ -44,15 +44,15 @@ body {
 /* Navigation */
 .navbar {
     padding: 12px 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Elegant semi-translucent white border for dark navy navbar */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(204, 217, 232, 0.96); /* Elegant sea-spray translucent background with premium contrast */
+    background-color: rgba(10, 37, 64, 0.96); /* Premium dark navy translucent background matching the footer */
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(10, 37, 64, 0.04);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: var(--primary-navy);
+    color: #ffffff; /* Premium white logo text for dark navbar */
 }
 
 .logo-img {
@@ -90,7 +90,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: #e2e8f0; /* Elegant light-silver link text for superb dark navy navbar contrast */
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
@@ -116,7 +116,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--primary-navy);
+    color: var(--accent-green); /* Elegant sustainability green hover effect */
 }
 
 
@@ -132,7 +132,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: var(--primary-navy);
+    background-color: #ffffff; /* White hamburger bars for dark navy navbar */
     transition: 0.3s;
 }
 
@@ -700,12 +700,12 @@ footer p {
 
     .nav-links {
         position: absolute;
-        top: 60px;
+        top: 74px; /* Perfectly aligned with the navbar height */
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: rgba(204, 217, 232, 0.98); /* Matching sea-spray backdrop with premium contrast for mobile dropdown */
-        border-bottom: 1px solid var(--border-color);
+        background-color: rgba(10, 37, 64, 0.98); /* Matching dark navy backdrop with premium contrast for mobile dropdown */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
@@ -718,7 +718,7 @@ footer p {
 
     .nav-links li {
         padding: 15px 20px;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border for links separator on navy mobile menu */
     }
 
     .services-grid,
