@@ -31,7 +31,7 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-dark);
-    padding-top: 80px;
+    padding-top: 85px; /* Adjusted to match the new header height beautifully */
     background-color: var(--bg-white);
 }
 
@@ -43,7 +43,7 @@ body {
 
 /* Navigation */
 .navbar {
-    padding: 12px 0;
+    padding: 8px 0; /* Reduced padding for perfect balance with the larger logo */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Elegant semi-translucent white border for dark navy navbar */
     position: fixed;
     top: 0;
@@ -68,13 +68,15 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #ffffff; /* Premium white logo text for dark navbar */
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .logo-img {
-    height: 50px;
+    height: 65px; /* Enlarged for maximum legibility */
     width: auto;
     object-fit: contain;
+    border-radius: 10px; /* Sophisticated rounded corners for premium aesthetic */
     transition: transform 0.3s ease;
 }
 
@@ -86,6 +88,7 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
+    align-items: center; /* Perfectly centers all nav links vertically in the header */
 }
 
 .nav-links a {
@@ -700,7 +703,7 @@ footer p {
 
     .nav-links {
         position: absolute;
-        top: 74px; /* Perfectly aligned with the navbar height */
+        top: 81px; /* Perfectly aligned with the new navbar height */
         left: 0;
         right: 0;
         flex-direction: column;
