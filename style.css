@@ -6,10 +6,10 @@
     --accent-green: #10b981;      /* Sustainability emerald green */
     --accent-green-hover: #059669;/* Darker sustainability green for hover */
     --text-dark: #0f172a;         /* High-contrast slate 900 for readability */
-    --text-light: #475569;        /* Mid-tone slate 600 for subtext */
-    --bg-light: #f0f6fc;          /* Fresh sea-spray light blue-grey */
+    --text-light: #334155;        /* Noticeably darker slate 700 for high accessibility and subtext contrast */
+    --bg-light: #e2edf9;          /* Noticeably darker sea-spray blue-grey for perfect background distinction */
     --bg-white: #ffffff;
-    --border-color: #e2eaf4;      /* Clean sea-spray light border */
+    --border-color: #cbd8e9;      /* Darker, highly visible sea-spray border */
     --font-primary: 'Outfit', sans-serif;
     --shadow-soft: 0 4px 20px rgba(10, 37, 64, 0.04);
     --shadow-hover: 0 12px 30px rgba(10, 37, 64, 0.08);
@@ -49,7 +49,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(240, 246, 252, 0.96); /* Elegant sea-spray translucent background */
+    background-color: rgba(226, 237, 249, 0.96); /* Elegant sea-spray translucent background with higher contrast */
     backdrop-filter: blur(10px);
     z-index: 1000;
     box-shadow: 0 2px 15px rgba(10, 37, 64, 0.04);
@@ -704,7 +704,7 @@ footer p {
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: rgba(240, 246, 252, 0.98); /* Matching sea-spray backdrop for mobile dropdown */
+        background-color: rgba(226, 237, 249, 0.98); /* Matching sea-spray backdrop with higher contrast for mobile dropdown */
         border-bottom: 1px solid var(--border-color);
         max-height: 0;
         overflow: hidden;
