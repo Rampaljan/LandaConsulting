@@ -16,6 +16,10 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -231,6 +235,7 @@ p {
     font-weight: 600;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
     display: inline-block;
