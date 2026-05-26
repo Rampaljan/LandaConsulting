@@ -282,7 +282,35 @@ p {
     text-align: center;
     font-size: 18px;
     color: var(--text-dark);
-    line-height: 1.8;
+}
+
+/* About Flex Layout */
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.about-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* optional spacing */
+}
+
+.about-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-navy);
+}
+
+.about-caption {
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 8px;
+    text-align: center;
 }
 
 /* Services Section */
