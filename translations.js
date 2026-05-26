@@ -83,6 +83,7 @@ const translations = {
             infoTitle: "Bezpośredni kontakt",
             phone: "Telefon:",
             email: "Email:",
+            linkedin: "LinkedIn:",
             placeholders: {
                 name: "Imię i nazwisko",
                 email: "Email",
@@ -185,6 +186,7 @@ const translations = {
             infoTitle: "Direct Contact",
             phone: "Phone:",
             email: "Email:",
+            linkedin: "LinkedIn:",
             placeholders: {
                 name: "Full Name",
                 email: "Email",
@@ -287,6 +289,7 @@ const translations = {
             infoTitle: "直接联系方式",
             phone: "电话：",
             email: "邮箱：",
+            linkedin: "领英：",
             placeholders: {
                 name: "姓名",
                 email: "电子邮箱",
