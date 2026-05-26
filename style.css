@@ -287,10 +287,21 @@ p {
 /* About Flex Layout */
 .about-flex {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    text-align: left;
     gap: 20px;
-    justify-content: center;
 }
+
+    .about-image-container {
+        order: 1;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+.about-text {
+    order: 2;
+}
+
 .about-image-container {
     display: flex;
     flex-direction: column;
@@ -754,6 +765,19 @@ footer p {
 @media (max-width: 768px) {
     .navbar .container {
         padding: 0 20px;
+    }
+    
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-text {
+        order: 1;
+    }
+    .about-image-container {
+        order: 2;
+        margin-top: 20px;
     }
 
     .hamburger {
