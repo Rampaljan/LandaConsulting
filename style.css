@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --primary-navy: #0a2540;      /* Premium deep sea navy (Stripe-grade trust) */
-    --secondary-blue: #0061e0;    /* Vivid ocean trust blue */
-    --accent-green: #10b981;      /* Sustainability emerald green */
-    --accent-green-hover: #059669;/* Darker sustainability green for hover */
-    --text-dark: #0f172a;         /* High-contrast slate 900 for readability */
-    --text-light: #1e293b;        /* Crisp slate 800 for superb accessibility and high contrast */
-    --bg-light: #ccd9e8;          /* Solid elegant sea-spray grey-blue for highly visible background contrast */
+    --primary-navy: #0a2540;
+    /* Premium deep sea navy (Stripe-grade trust) */
+    --secondary-blue: #0061e0;
+    /* Vivid ocean trust blue */
+    --accent-green: #10b981;
+    /* Sustainability emerald green */
+    --accent-green-hover: #059669;
+    /* Darker sustainability green for hover */
+    --text-dark: #0f172a;
+    /* High-contrast slate 900 for readability */
+    --text-light: #1e293b;
+    /* Crisp slate 800 for superb accessibility and high contrast */
+    --bg-light: #ccd9e8;
+    /* Solid elegant sea-spray grey-blue for highly visible background contrast */
     --bg-white: #ffffff;
-    --border-color: #9eb0c6;      /* Prominent, beautifully defined sea-spray border */
+    --border-color: #9eb0c6;
+    /* Prominent, beautifully defined sea-spray border */
     --font-primary: 'Outfit', sans-serif;
     --shadow-soft: 0 4px 20px rgba(10, 37, 64, 0.04);
     --shadow-hover: 0 12px 30px rgba(10, 37, 64, 0.08);
@@ -31,7 +39,8 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-dark);
-    padding-top: 85px; /* Adjusted to match the new header height beautifully */
+    padding-top: 85px;
+    /* Adjusted to match the new header height beautifully */
     background-color: var(--bg-white);
 }
 
@@ -43,13 +52,16 @@ body {
 
 /* Navigation */
 .navbar {
-    padding: 8px 0; /* Reduced padding for perfect balance with the larger logo */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Elegant semi-translucent white border for dark navy navbar */
+    padding: 8px 0;
+    /* Reduced padding for perfect balance with the larger logo */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Elegant semi-translucent white border for dark navy navbar */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(10, 37, 64, 0.96); /* Premium dark navy translucent background matching the footer */
+    background-color: rgba(10, 37, 64, 0.96);
+    /* Premium dark navy translucent background matching the footer */
     backdrop-filter: blur(10px);
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -73,11 +85,14 @@ body {
 }
 
 .logo-img {
-    height: 65px; /* Enlarged for maximum legibility */
+    height: 65px;
+    /* Enlarged for maximum legibility */
     width: auto;
     object-fit: contain;
-    border-radius: 10px; /* Sophisticated rounded corners for premium aesthetic */
-    display: block; /* Eliminates vertical baseline offset for absolute centering */
+    border-radius: 10px;
+    /* Sophisticated rounded corners for premium aesthetic */
+    display: block;
+    /* Eliminates vertical baseline offset for absolute centering */
     transition: transform 0.3s ease;
 }
 
@@ -89,24 +104,31 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
-    align-items: center; /* Perfectly centers all nav links vertically in the header */
-    margin: 0 !important; /* Explicitly overrides Bootstrap's default bottom margin */
-    padding: 0 !important; /* Explicitly overrides Bootstrap's default left padding */
+    align-items: center;
+    /* Perfectly centers all nav links vertically in the header */
+    margin: 0 !important;
+    /* Explicitly overrides Bootstrap's default bottom margin */
+    padding: 0 !important;
+    /* Explicitly overrides Bootstrap's default left padding */
 }
 
 .nav-links li {
     display: inline-flex;
-    align-items: center; /* Explicit vertical centering of the list items */
+    align-items: center;
+    /* Explicit vertical centering of the list items */
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #e2e8f0; /* Elegant light-silver link text for superb dark navy navbar contrast */
+    color: #e2e8f0;
+    /* Elegant light-silver link text for superb dark navy navbar contrast */
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
-    padding: 6px 0; /* Perfectly balanced top/bottom padding to achieve absolute pixel-perfect centering */
-    line-height: 1; /* Normalizes line-height to remove default vertical spacing anomalies */
+    padding: 6px 0;
+    /* Perfectly balanced top/bottom padding to achieve absolute pixel-perfect centering */
+    line-height: 1;
+    /* Normalizes line-height to remove default vertical spacing anomalies */
 }
 
 .nav-links a::after {
@@ -128,7 +150,8 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--accent-green); /* Elegant sustainability green hover effect */
+    color: var(--accent-green);
+    /* Elegant sustainability green hover effect */
 }
 
 
@@ -144,7 +167,8 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: #ffffff; /* White hamburger bars for dark navy navbar */
+    background-color: #ffffff;
+    /* White hamburger bars for dark navy navbar */
     transition: 0.3s;
 }
 
@@ -165,7 +189,9 @@ section {
     padding: 80px 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-primary);
     font-weight: 700;
 }
@@ -246,9 +272,11 @@ p {
 /* CTA Button */
 .cta {
     padding: 14px 34px;
-    background-color: rgba(5, 150, 105, 0.6); /* Slightly darker green and translucent */
+    background-color: rgba(5, 150, 105, 0.6);
+    /* Slightly darker green and translucent */
     color: #ffffff;
-    border: 1px solid rgba(16, 185, 129, 0.5); /* Semi-transparent emerald border */
+    border: 1px solid rgba(16, 185, 129, 0.5);
+    /* Semi-transparent emerald border */
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
@@ -257,11 +285,13 @@ p {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
     display: inline-block;
-    backdrop-filter: blur(5px); /* Premium glassmorphism blur */
+    backdrop-filter: blur(5px);
+    /* Premium glassmorphism blur */
 }
 
 .cta:hover {
-    background-color: rgba(16, 185, 129, 0.85); /* Slightly brighter and more solid green on hover */
+    background-color: rgba(16, 185, 129, 0.85);
+    /* Slightly brighter and more solid green on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
     border-color: rgba(16, 185, 129, 0.8);
@@ -293,11 +323,12 @@ p {
     gap: 20px;
 }
 
-    .about-image-container {
-        order: 1;
-        margin-top: 20px;
-        margin-right: 20px;
-    }
+.about-image-container {
+    order: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
 .about-text {
     order: 2;
 }
@@ -306,7 +337,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px; /* optional spacing */
+    margin-right: 20px;
+    /* optional spacing */
 }
 
 .about-photo {
@@ -332,8 +364,36 @@ p {
     margin-top: 40px;
 }
 
+/* Services Section Enhancements */
+.services {
+    position: relative;
+    overflow: hidden;
+}
+
+.services .container {
+    /* No extra right padding needed; image will appear below the grid */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.services-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    pointer-events: none;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+
+
+
 .service-card {
-    background-color: var(--bg-white);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
@@ -570,7 +630,8 @@ p {
     margin-top: 40px;
 }
 
-.contact-form h3, .contact-info h3 {
+.contact-form h3,
+.contact-info h3 {
     color: var(--primary-navy);
     font-weight: 600;
     margin-bottom: 20px;
@@ -586,7 +647,8 @@ p {
 .contact-form input,
 .contact-form textarea {
     padding: 12px 16px;
-    border: 1px solid var(--primary-navy); /* High-contrast border in footer navy for visibility */
+    border: 1px solid var(--primary-navy);
+    /* High-contrast border in footer navy for visibility */
     border-radius: 8px;
     font-family: var(--font-primary);
     color: var(--text-dark);
@@ -705,7 +767,8 @@ footer p {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 2px solid rgba(10, 37, 64, 0.15); /* A subtle border in primary navy with opacity, always visible */
+    border: 2px solid rgba(10, 37, 64, 0.15);
+    /* A subtle border in primary navy with opacity, always visible */
     background: transparent;
     padding: 0;
     cursor: pointer;
@@ -766,15 +829,16 @@ footer p {
     .navbar .container {
         padding: 0 20px;
     }
-    
+
     .about-flex {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .about-text {
         order: 1;
     }
+
     .about-image-container {
         order: 2;
         margin-top: 20px;
@@ -786,11 +850,13 @@ footer p {
 
     .nav-links {
         position: absolute;
-        top: 81px; /* Perfectly aligned with the new navbar height */
+        top: 81px;
+        /* Perfectly aligned with the new navbar height */
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: rgba(10, 37, 64, 0.98); /* Matching dark navy backdrop with premium contrast for mobile dropdown */
+        background-color: rgba(10, 37, 64, 0.98);
+        /* Matching dark navy backdrop with premium contrast for mobile dropdown */
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         max-height: 0;
         overflow: hidden;
@@ -804,7 +870,8 @@ footer p {
 
     .nav-links li {
         padding: 15px 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border for links separator on navy mobile menu */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle white border for links separator on navy mobile menu */
     }
 
     .services-grid,
@@ -844,7 +911,7 @@ footer p {
         box-shadow: var(--shadow-soft) !important;
         border-color: var(--border-color) !important;
     }
-    
+
     .service-card:hover::before,
     .project-card:hover::before,
     .blog-card:hover::before {
