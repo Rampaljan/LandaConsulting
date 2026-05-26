@@ -203,21 +203,20 @@ p {
 }
 
 .hero {
-    background: linear-gradient(135deg, #091c30 0%, #04101e 50%, #01060d 100%);
+    background-image: url('assets/kontenerowiec_na_morzu_widok_od_tylniego_boku_z_gory.jpg');
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    background-size: cover;
+    background-attachment: scroll;
     color: #ffffff;
-    padding: 120px 0;
+    padding: 110px 0 150px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.12) 0%, transparent 45%),
-                radial-gradient(circle at 20% 80%, rgba(0, 97, 224, 0.18) 0%, transparent 55%);
-    pointer-events: none;
+.hero .container {
+    margin-top: -40px;
 }
 
 .hero h1 {
@@ -226,15 +225,22 @@ p {
     background: linear-gradient(120deg, #ffffff 30%, #e2e8f0 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
 }
 
 .hero p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 20px;
-    color: #94a3b8;
-    margin-bottom: 35px;
+    color: #ffffff;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
 /* CTA Button */
@@ -756,6 +762,14 @@ footer p {
 
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 85px 0 105px 0;
+    }
+
+    .hero .container {
+        margin-top: -28px;
     }
 
     h1 {
