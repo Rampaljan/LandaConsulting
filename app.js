@@ -70,6 +70,71 @@ function updatePage() {
         card.innerHTML = `<h3>${article.title}</h3><p>${article.description}</p>`;
         blogContainer.appendChild(card);
     });
+
+    // Initialize/re-initialize scroll observer
+    initScrollObserver();
+}
+
+// Dynamic scroll highlight observer for cards on mobile (one highlighted at a time)
+let scrollListener;
+
+function initScrollObserver() {
+    if (scrollListener) {
+        window.removeEventListener('scroll', scrollListener);
+    }
+
+    const cards = document.querySelectorAll('.service-card, .project-card, .blog-card');
+    if (cards.length === 0) return;
+
+    let ticking = false;
+
+    scrollListener = () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                highlightClosestCard(cards);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    };
+
+    // Run once initially to highlight the starting closest card
+    highlightClosestCard(cards);
+
+    window.addEventListener('scroll', scrollListener);
+}
+
+function highlightClosestCard(cards) {
+    // If the user is at the very top of the page (within 150px of scrollY), do not highlight anything
+    if (window.scrollY < 150) {
+        cards.forEach(card => card.classList.remove('active-card'));
+        return;
+    }
+
+    const viewportCenter = window.innerHeight / 2;
+    let closestCard = null;
+    let minDistance = Infinity;
+
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const cardCenter = rect.top + rect.height / 2;
+        const distance = Math.abs(viewportCenter - cardCenter);
+
+        // Remove active class by default
+        card.classList.remove('active-card');
+
+        // Only highlight if the card is visible in the viewport
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestCard = card;
+            }
+        }
+    });
+
+    if (closestCard) {
+        closestCard.classList.add('active-card');
+    }
 }
 
 // Initialize

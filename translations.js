@@ -15,7 +15,7 @@ const translations = {
         },
         about: {
             title: "O mnie",
-            content: "Ponad 20 lat doświadczenia w branży transportu morskiego i logistyki. Specjalista w optymalizacji łańcuchów dostaw, zarządzaniu ryzykiem operacyjnym oraz wdrażaniu compliance'u zgodnie z regulacjami EU. Pracowałem z czołowymi armatorami, operatorami portowymi i globalnymi funduszami inwestycyjnymi. Moja ekspertyza obejmuje analizę kosztów transportu, ocenę wydajności operacyjnej, zarządzanie projektami modernizacji flot oraz doradztwo strategiczne dla firm z sektora morskiego."
+            content: "Pasja senior executive z długim, udowodnionym doświadczeniem w branży morskiej, transportu i logistyki. Odpowiedzialny za kluczowe projekty, które zmieniły krajobraz logistyki w Polsce i Europie Środkowo‑Wschodniej:\n\n- Rozwój strategicznej wizji DCT Gdańsk i realizacja strategii rozwoju handlowego i biznesowego, co uczyniło DCT Gdańsk największym hubem kontenerowym w regionie Bałtyku i jednym z największych w Europie\n- Wprowadzenie pierwszego bezpośredniego połączenia do Bałtyku z największymi kontenerowcami (usługa AE10)\n- Uruchomienie pierwszych usług intermodalnych linii żeglugowych w Polsce (AMBER i BALTIC EXPRESS)\n\nEkspert w sprzedaży i rozwoju biznesu, zarządzaniu łańcuchem dostaw i długoterminowym planowaniu wizji. Skupiony na wynikach oraz budowaniu relacji z klientami i współpracownikami, osiągając najwyższe wyniki w ankietach satysfakcji pracowników i klientów.\n\nAbsolwent Transportu i Logistyki, Ekonomii i IT na Uniwersytecie Gdańskim oraz programu Executive MBA Uniwersytetu Erasmus w Rotterdamie.\n\nZ przyjemnością dzieli się doświadczeniem i wiedzą jako wykładowca w niepełnym wymiarze czasu na Uniwersytecie Gdańskim, WSB oraz mentor w programie THE GRADE w Gdańsku.\n\nWspółzałożyciel i współprowadzący podcast ETA.fm o tematyce morska, logistyka i łańcuch dostaw."
         },
         services: {
             title: "Usługi",
@@ -117,7 +117,7 @@ const translations = {
         },
         about: {
             title: "About Me",
-            content: "Over 20 years of experience in the maritime transport and logistics industry. Specialist in supply chain optimization, operational risk management, and EU compliance implementation. I have worked with leading shipowners, port operators, and global investment funds. My expertise includes transport cost analysis, operational efficiency assessment, fleet modernization project management, and strategic consulting for maritime companies."
+            content: "Over 20 years of experience in the maritime, transport and logistics industry. Passionate senior executive with a long‑proven track record. Has been responsible for major projects that have changed the landscape of logistics in Poland and CEE:\n\n- Development of DCT Gdansk strategic vision and execution of commercial and business development strategy, which has made DCT Gdansk the largest container hub in the Baltics and one of the largest in Europe\n- Introduction of first direct call into the Baltics with the largest container vessels (AE10 service)\n- Deployment of first shipping line intermodal services in Poland (AMBER and BALTIC EXPRESS)\n\nExpert in Sales and Business Development, Supply Chain Management and long‑term vision planning. Focused on delivering results and building relationships with customers and co‑workers, achieving highest scores in Employee and Customer Satisfaction Surveys.\n\nGraduate of Transportation and Logistics, Econometry & IT at the University of Gdansk and Executive MBA program from Erasmus University in Rotterdam.\n\nHappily sharing my experience and professional knowledge as a part‑time tutor at the University of Gdansk, WSB and Mentor in THE GRADE program in Gdansk.\n\nETA.fm podcast on maritime, logistics and supply chain co‑founder and co‑host."
         },
         services: {
             title: "Services",
@@ -219,7 +219,7 @@ const translations = {
         },
         about: {
             title: "关于我",
-            content: "在海洋运输与物流行业拥有超过20年的丰富经验。专注于供应链优化、运营风险管理以及符合欧盟法规的合规化建设。曾与领先的船东、港口运营商以及全球投资机构深度合作。我的专业领域涵盖运输成本分析、运营效率评估、船队现代化升级项目管理，以及海洋物流板块企业的战略咨询。"
+            content: "在海洋运输与物流行业拥有超过20年的丰富经验。专注于供应链优化、运营风险管理以及符合欧盟法规的合规化建设。曾与领先的船东、港口运营商以及全球投资机构深度合作。我的专业领域涵盖运输成本分析、运营效率评估、船队现代化升级项目管理，以及海洋物流板块企业的战略咨询。曾负责在波兰和中东欧地区改变物流格局的重大项目：\n\n- 开发并执行DCT格但斯克的战略愿景和商务发展策略，使其成为波罗的海地区最大的集装箱枢纽，并跻身欧洲最大枢纽之一\n- 引入首个直达波罗的海的最大集装箱船航线（AE10航线）\n- 在波兰推出首个航运公司联运服务（AMBER和BALTIC EXPRESS）\n\n在销售与业务发展、供应链管理以及长期愿景规划方面拥有专业知识。专注于交付成果并与客户及同事建立关系，在员工和客户满意度调查中取得最高分。\n\n毕业于格但斯克大学交通与物流专业，兼修计量经济学与信息技术，并完成鹿特丹伊拉斯姆斯大学的高管MBA课程。\n\n乐于作为兼职导师在格但斯克大学、WSB以及THE GRADE项目中分享经验。\n\n共同创办并主持ETA.fm播客，聚焦海运、物流和供应链。"
         },
         services: {
             title: "服务项目",

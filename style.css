@@ -246,23 +246,25 @@ p {
 /* CTA Button */
 .cta {
     padding: 14px 34px;
-    background-color: var(--accent-green);
+    background-color: rgba(5, 150, 105, 0.6); /* Slightly darker green and translucent */
     color: #ffffff;
-    border: none;
+    border: 1px solid rgba(16, 185, 129, 0.5); /* Semi-transparent emerald border */
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
     display: inline-block;
+    backdrop-filter: blur(5px); /* Premium glassmorphism blur */
 }
 
 .cta:hover {
-    background-color: var(--accent-green-hover);
+    background-color: rgba(16, 185, 129, 0.85); /* Slightly brighter and more solid green on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    border-color: rgba(16, 185, 129, 0.8);
 }
 
 .cta:active {
@@ -585,6 +587,7 @@ footer {
     color: #ffffff;
     padding: 50px 0;
     border-top: 3px solid var(--accent-green);
+    text-align: right;
 }
 
 footer p {
@@ -594,6 +597,7 @@ footer p {
 
 .footer-links {
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
     margin-top: 20px;
 }
@@ -778,5 +782,47 @@ footer p {
 
     h2 {
         font-size: 24px;
+    }
+
+    /* Reset sticky click hovers on mobile */
+    .service-card:hover,
+    .project-card:hover,
+    .blog-card:hover {
+        transform: none !important;
+        box-shadow: var(--shadow-soft) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    .service-card:hover::before,
+    .project-card:hover::before,
+    .blog-card:hover::before {
+        transform: scaleX(0) !important;
+    }
+
+    .service-card:hover h3,
+    .project-card:hover h3,
+    .blog-card:hover h3 {
+        color: var(--primary-navy) !important;
+    }
+
+    /* Beautiful auto scroll highlights when in the middle of mobile viewport */
+    .service-card.active-card,
+    .project-card.active-card,
+    .blog-card.active-card {
+        transform: translateY(-8px) !important;
+        box-shadow: var(--shadow-hover) !important;
+        border-color: var(--secondary-blue) !important;
+    }
+
+    .service-card.active-card::before,
+    .project-card.active-card::before,
+    .blog-card.active-card::before {
+        transform: scaleX(1) !important;
+    }
+
+    .service-card.active-card h3,
+    .project-card.active-card h3,
+    .blog-card.active-card h3 {
+        color: var(--secondary-blue) !important;
     }
 }
