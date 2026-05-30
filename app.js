@@ -186,6 +186,19 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+// Smooth scroll to top for Home links
+document.querySelectorAll('a[href="#home"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        history.pushState(null, null, '#home');
+    });
+});
+
+
 langToggle.addEventListener('click', () => {
     langOptions.classList.toggle('active');
 });
