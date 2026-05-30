@@ -304,6 +304,67 @@ p {
 /* About Section */
 .about {
     background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-bg-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 55%;
+    max-height: 250px;
+    width: auto;
+    object-fit: contain;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.about-bg-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 55%;
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .about-bg-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 55%;
+        max-height: 120px;
+        width: auto;
+        object-fit: contain;
+        opacity: 1;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .about-bg-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 55%;
+        max-height: 70px;
+        width: auto;
+        object-fit: contain;
+        opacity: 1;
+        pointer-events: none;
+        z-index: 0;
+    }
+}
+
+.about .container {
+    position: relative;
+    z-index: 1;
 }
 
 .about-content {
